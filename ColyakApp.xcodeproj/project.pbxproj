@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD090A232C3D8E220050FFF0 /* ColyakAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD090A222C3D8E220050FFF0 /* ColyakAppTests.swift */; };
+		FD090A292C3D91000050FFF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD090A132C3D64C40050FFF0 /* XCTest.framework */; };
+		FD090A2F2C3DABA60050FFF0 /* BarcodeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD090A2E2C3DABA60050FFF0 /* BarcodeViewModelTest.swift */; };
+		FD090A312C3DAE700050FFF0 /* MockUrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD090A302C3DAE700050FFF0 /* MockUrlProtocol.swift */; };
+		FD090A332C3DC2900050FFF0 /* BarcodeDetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD090A322C3DC2900050FFF0 /* BarcodeDetailViewModelTest.swift */; };
+		FD090A352C3DC36C0050FFF0 /* BarcodeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD090A342C3DC36C0050FFF0 /* BarcodeDetailsViewModel.swift */; };
+		FD090A392C3EE9090050FFF0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD090A382C3EE9090050FFF0 /* NetworkHelper.swift */; };
+		FD090A572C3F39650050FFF0 /* InternetStatusControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD090A562C3F39650050FFF0 /* InternetStatusControllerView.swift */; };
+		FD090A592C3F3B800050FFF0 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD090A582C3F3B800050FFF0 /* ViewExtension.swift */; };
+		FD4911232C2EC3E200BFC070 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4911222C2EC3E200BFC070 /* LoginModel.swift */; };
+		FD4911272C2EC41C00BFC070 /* BarcodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4911262C2EC41C00BFC070 /* BarcodeModel.swift */; };
+		FD4911292C2EC43A00BFC070 /* VerifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4911282C2EC43A00BFC070 /* VerifyModel.swift */; };
+		FD49112B2C2EC46700BFC070 /* LikeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD49112A2C2EC46700BFC070 /* LikeResponseModel.swift */; };
+		FD49112D2C2EC48300BFC070 /* PDFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD49112C2C2EC48300BFC070 /* PDFModel.swift */; };
+		FD49112F2C2EC4BB00BFC070 /* ReceiptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD49112E2C2EC4BB00BFC070 /* ReceiptModel.swift */; };
+		FD4911312C2EC4D400BFC070 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4911302C2EC4D400BFC070 /* QuizModel.swift */; };
+		FD4911332C2EC4E400BFC070 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4911322C2EC4E400BFC070 /* CommentModel.swift */; };
+		FD4911352C2EC4F600BFC070 /* ReplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4911342C2EC4F500BFC070 /* ReplyModel.swift */; };
+		FD4911372C2EC52300BFC070 /* UserReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4911362C2EC52300BFC070 /* UserReportModel.swift */; };
+		FD4911392C2EC53B00BFC070 /* BolusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4911382C2EC53B00BFC070 /* BolusModel.swift */; };
+		FD49113B2C2EC55600BFC070 /* SuggestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD49113A2C2EC55600BFC070 /* SuggestionModel.swift */; };
+		FD64DFF22C2EA8AC006B2DEF /* ColyakAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64DFF12C2EA8AC006B2DEF /* ColyakAppApp.swift */; };
+		FD64DFF42C2EA8AC006B2DEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64DFF32C2EA8AC006B2DEF /* ContentView.swift */; };
+		FD64DFF62C2EA8AF006B2DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD64DFF52C2EA8AF006B2DEF /* Assets.xcassets */; };
+		FD64DFF92C2EA8AF006B2DEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD64DFF82C2EA8AF006B2DEF /* Preview Assets.xcassets */; };
+		FD64E0052C2EAE83006B2DEF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0042C2EAE83006B2DEF /* RegisterView.swift */; };
+		FD64E0072C2EAEBE006B2DEF /* MembershipOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0062C2EAEBE006B2DEF /* MembershipOTP.swift */; };
+		FD64E0092C2EAEE3006B2DEF /* VerifyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0082C2EAEE3006B2DEF /* VerifyCodeView.swift */; };
+		FD64E00B2C2EAF22006B2DEF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E00A2C2EAF22006B2DEF /* LoginView.swift */; };
+		FD64E00D2C2EAF3F006B2DEF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E00C2C2EAF3F006B2DEF /* MainView.swift */; };
+		FD64E00F2C2EAF6A006B2DEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E00E2C2EAF6A006B2DEF /* HomeView.swift */; };
+		FD64E0112C2EAF8F006B2DEF /* BarcodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0102C2EAF8F006B2DEF /* BarcodeDetailView.swift */; };
+		FD64E0132C2EAFA9006B2DEF /* ModelScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0122C2EAFA9006B2DEF /* ModelScannerView.swift */; };
+		FD64E0152C2EAFC7006B2DEF /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0142C2EAFC7006B2DEF /* ChangePasswordView.swift */; };
+		FD64E0172C2EAFDD006B2DEF /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0162C2EAFDD006B2DEF /* NewPasswordView.swift */; };
+		FD64E0192C2EAFF9006B2DEF /* ChangePasswordOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0182C2EAFF9006B2DEF /* ChangePasswordOTP.swift */; };
+		FD64E01B2C2EB016006B2DEF /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E01A2C2EB016006B2DEF /* PopupView.swift */; };
+		FD64E01D2C2EB031006B2DEF /* PopupViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E01C2C2EB031006B2DEF /* PopupViewBackground.swift */; };
+		FD64E01F2C2EB049006B2DEF /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E01E2C2EB049006B2DEF /* PDFView.swift */; };
+		FD64E0212C2EB062006B2DEF /* PDFViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0202C2EB062006B2DEF /* PDFViews.swift */; };
+		FD64E0232C2EB07C006B2DEF /* ReceiptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0222C2EB07C006B2DEF /* ReceiptsView.swift */; };
+		FD64E0252C2EB0B5006B2DEF /* TopReceiptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0242C2EB0B5006B2DEF /* TopReceiptDetailView.swift */; };
+		FD64E0272C2EB0CD006B2DEF /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0262C2EB0CD006B2DEF /* QuizView.swift */; };
+		FD64E0292C2EB0E7006B2DEF /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0282C2EB0E7006B2DEF /* QuestionView.swift */; };
+		FD64E02B2C2EB10D006B2DEF /* ReplyAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E02A2C2EB10D006B2DEF /* ReplyAllView.swift */; };
+		FD64E02D2C2EB129006B2DEF /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E02C2C2EB129006B2DEF /* TopBar.swift */; };
+		FD64E02F2C2EB14D006B2DEF /* MenuButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E02E2C2EB14D006B2DEF /* MenuButtons.swift */; };
+		FD64E0312C2EB16F006B2DEF /* SlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0302C2EB16F006B2DEF /* SlideMenu.swift */; };
+		FD64E0332C2EB1FA006B2DEF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0322C2EB1FA006B2DEF /* ProfileView.swift */; };
+		FD64E0352C2EB234006B2DEF /* MealSelectionDesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0342C2EB234006B2DEF /* MealSelectionDesignView.swift */; };
+		FD64E0372C2EB25B006B2DEF /* MealCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0362C2EB25B006B2DEF /* MealCircleProgressView.swift */; };
+		FD64E0392C2EB277006B2DEF /* NutrificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0382C2EB277006B2DEF /* NutrificationView.swift */; };
+		FD64E03B2C2EB299006B2DEF /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E03A2C2EB299006B2DEF /* CircleProgressBar.swift */; };
+		FD64E03D2C2EB2BE006B2DEF /* NutritionProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E03C2C2EB2BE006B2DEF /* NutritionProgressView.swift */; };
+		FD64E03F2C2EB2ED006B2DEF /* SearchBarCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E03E2C2EB2ED006B2DEF /* SearchBarCustomView.swift */; };
+		FD64E0412C2EB308006B2DEF /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0402C2EB308006B2DEF /* MealView.swift */; };
+		FD64E0432C2EB331006B2DEF /* UserReports.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0422C2EB331006B2DEF /* UserReports.swift */; };
+		FD64E0452C2EB34F006B2DEF /* MealAddReadyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0442C2EB34F006B2DEF /* MealAddReadyDetailView.swift */; };
+		FD64E0472C2EB37B006B2DEF /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0462C2EB37B006B2DEF /* MealListView.swift */; };
+		FD64E0492C2EB3A4006B2DEF /* MealAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0482C2EB3A4006B2DEF /* MealAddView.swift */; };
+		FD64E04B2C2EB3C7006B2DEF /* BolusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E04A2C2EB3C7006B2DEF /* BolusView.swift */; };
+		FD64E04D2C2EB3E4006B2DEF /* SuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E04C2C2EB3E4006B2DEF /* SuggestionView.swift */; };
+		FD64E04F2C2EB402006B2DEF /* MealAddDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E04E2C2EB402006B2DEF /* MealAddDetailView.swift */; };
+		FD64E0512C2EB429006B2DEF /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0502C2EB429006B2DEF /* VerificationViewModel.swift */; };
+		FD64E0532C2EB449006B2DEF /* CreateUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0522C2EB449006B2DEF /* CreateUserViewModel.swift */; };
+		FD64E0552C2EB468006B2DEF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0542C2EB467006B2DEF /* LoginViewModel.swift */; };
+		FD64E0572C2EB481006B2DEF /* BarcodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0562C2EB481006B2DEF /* BarcodeViewModel.swift */; };
+		FD64E0592C2EB4A1006B2DEF /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0582C2EB4A1006B2DEF /* ChangePasswordViewModel.swift */; };
+		FD64E05B2C2EB4BC006B2DEF /* FavoriteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E05A2C2EB4BC006B2DEF /* FavoriteListViewModel.swift */; };
+		FD64E05D2C2EB4D4006B2DEF /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E05C2C2EB4D4006B2DEF /* PDFViewModel.swift */; };
+		FD64E05F2C2EB4EB006B2DEF /* ReceiptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E05E2C2EB4EB006B2DEF /* ReceiptViewModel.swift */; };
+		FD64E0612C2EB503006B2DEF /* PopularReceiptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0602C2EB503006B2DEF /* PopularReceiptViewModel.swift */; };
+		FD64E0632C2EB51D006B2DEF /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0622C2EB51D006B2DEF /* QuizViewModel.swift */; };
+		FD64E0652C2EB53A006B2DEF /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0642C2EB53A006B2DEF /* CommentViewModel.swift */; };
+		FD64E0672C2EB55A006B2DEF /* ReplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0662C2EB559006B2DEF /* ReplyViewModel.swift */; };
+		FD64E0692C2EB57C006B2DEF /* UserReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E0682C2EB57C006B2DEF /* UserReportViewModel.swift */; };
+		FD64E06B2C2EB59A006B2DEF /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E06A2C2EB59A006B2DEF /* MealViewModel.swift */; };
+		FD64E06D2C2EB5B5006B2DEF /* SuggestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD64E06C2C2EB5B5006B2DEF /* SuggestionViewModel.swift */; };
+		FD64E0702C2EB7FA006B2DEF /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = FD64E06F2C2EB7FA006B2DEF /* CarBode */; };
+		FD64E0732C2EB818006B2DEF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FD64E0722C2EB818006B2DEF /* Alamofire */; };
+		FD64E0762C2EB82B006B2DEF /* CustomizableSegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = FD64E0752C2EB82B006B2DEF /* CustomizableSegmentedControl */; };
+		FD64E0792C2EB83C006B2DEF /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = FD64E0782C2EB83C006B2DEF /* PopupView */; };
+		FD64E07C2C2EB856006B2DEF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FD64E07B2C2EB856006B2DEF /* SDWebImageSwiftUI */; };
+		FD64E07F2C2EB86E006B2DEF /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FD64E07E2C2EB86E006B2DEF /* SDWebImage */; };
+		FD64E0822C2EB8A6006B2DEF /* SegmentedPicker in Frameworks */ = {isa = PBXBuildFile; productRef = FD64E0812C2EB8A6006B2DEF /* SegmentedPicker */; };
+		FDE193672C42A54400AEEA40 /* ReceiptsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE193662C42A54400AEEA40 /* ReceiptsDetailView.swift */; };
+		FDE193692C42A5CC00AEEA40 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE193682C42A5CC00AEEA40 /* CommentView.swift */; };
+		FDE1936D2C42F2F500AEEA40 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE1936C2C42F2F500AEEA40 /* DateFormatter.swift */; };
+		FDE193732C432AF500AEEA40 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE193722C432AF500AEEA40 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD090A242C3D8E220050FFF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD64DFE62C2EA8AC006B2DEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD64DFED2C2EA8AC006B2DEF;
+			remoteInfo = ColyakApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD090A132C3D64C40050FFF0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FD090A202C3D8E220050FFF0 /* ColyakAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColyakAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD090A222C3D8E220050FFF0 /* ColyakAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColyakAppTests.swift; sourceTree = "<group>"; };
+		FD090A2E2C3DABA60050FFF0 /* BarcodeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewModelTest.swift; sourceTree = "<group>"; };
+		FD090A302C3DAE700050FFF0 /* MockUrlProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlProtocol.swift; sourceTree = "<group>"; };
+		FD090A322C3DC2900050FFF0 /* BarcodeDetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDetailViewModelTest.swift; sourceTree = "<group>"; };
+		FD090A342C3DC36C0050FFF0 /* BarcodeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDetailsViewModel.swift; sourceTree = "<group>"; };
+		FD090A382C3EE9090050FFF0 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		FD090A562C3F39650050FFF0 /* InternetStatusControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetStatusControllerView.swift; sourceTree = "<group>"; };
+		FD090A582C3F3B800050FFF0 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		FD49111E2C2EC2CA00BFC070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FD4911222C2EC3E200BFC070 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		FD4911262C2EC41C00BFC070 /* BarcodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeModel.swift; sourceTree = "<group>"; };
+		FD4911282C2EC43A00BFC070 /* VerifyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyModel.swift; sourceTree = "<group>"; };
+		FD49112A2C2EC46700BFC070 /* LikeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeResponseModel.swift; sourceTree = "<group>"; };
+		FD49112C2C2EC48300BFC070 /* PDFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFModel.swift; sourceTree = "<group>"; };
+		FD49112E2C2EC4BB00BFC070 /* ReceiptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModel.swift; sourceTree = "<group>"; };
+		FD4911302C2EC4D400BFC070 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		FD4911322C2EC4E400BFC070 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		FD4911342C2EC4F500BFC070 /* ReplyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyModel.swift; sourceTree = "<group>"; };
+		FD4911362C2EC52300BFC070 /* UserReportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReportModel.swift; sourceTree = "<group>"; };
+		FD4911382C2EC53B00BFC070 /* BolusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BolusModel.swift; sourceTree = "<group>"; };
+		FD49113A2C2EC55600BFC070 /* SuggestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionModel.swift; sourceTree = "<group>"; };
+		FD64DFEE2C2EA8AC006B2DEF /* ColyakApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColyakApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD64DFF12C2EA8AC006B2DEF /* ColyakAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColyakAppApp.swift; sourceTree = "<group>"; };
+		FD64DFF32C2EA8AC006B2DEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD64DFF52C2EA8AF006B2DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD64DFF82C2EA8AF006B2DEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD64E0042C2EAE83006B2DEF /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FD64E0062C2EAEBE006B2DEF /* MembershipOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipOTP.swift; sourceTree = "<group>"; };
+		FD64E0082C2EAEE3006B2DEF /* VerifyCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeView.swift; sourceTree = "<group>"; };
+		FD64E00A2C2EAF22006B2DEF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FD64E00C2C2EAF3F006B2DEF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FD64E00E2C2EAF6A006B2DEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FD64E0102C2EAF8F006B2DEF /* BarcodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDetailView.swift; sourceTree = "<group>"; };
+		FD64E0122C2EAFA9006B2DEF /* ModelScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelScannerView.swift; sourceTree = "<group>"; };
+		FD64E0142C2EAFC7006B2DEF /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		FD64E0162C2EAFDD006B2DEF /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
+		FD64E0182C2EAFF9006B2DEF /* ChangePasswordOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordOTP.swift; sourceTree = "<group>"; };
+		FD64E01A2C2EB016006B2DEF /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		FD64E01C2C2EB031006B2DEF /* PopupViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewBackground.swift; sourceTree = "<group>"; };
+		FD64E01E2C2EB049006B2DEF /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		FD64E0202C2EB062006B2DEF /* PDFViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViews.swift; sourceTree = "<group>"; };
+		FD64E0222C2EB07C006B2DEF /* ReceiptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsView.swift; sourceTree = "<group>"; };
+		FD64E0242C2EB0B5006B2DEF /* TopReceiptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopReceiptDetailView.swift; sourceTree = "<group>"; };
+		FD64E0262C2EB0CD006B2DEF /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		FD64E0282C2EB0E7006B2DEF /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		FD64E02A2C2EB10D006B2DEF /* ReplyAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyAllView.swift; sourceTree = "<group>"; };
+		FD64E02C2C2EB129006B2DEF /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		FD64E02E2C2EB14D006B2DEF /* MenuButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtons.swift; sourceTree = "<group>"; };
+		FD64E0302C2EB16F006B2DEF /* SlideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenu.swift; sourceTree = "<group>"; };
+		FD64E0322C2EB1FA006B2DEF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FD64E0342C2EB234006B2DEF /* MealSelectionDesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSelectionDesignView.swift; sourceTree = "<group>"; };
+		FD64E0362C2EB25B006B2DEF /* MealCircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCircleProgressView.swift; sourceTree = "<group>"; };
+		FD64E0382C2EB277006B2DEF /* NutrificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrificationView.swift; sourceTree = "<group>"; };
+		FD64E03A2C2EB299006B2DEF /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
+		FD64E03C2C2EB2BE006B2DEF /* NutritionProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionProgressView.swift; sourceTree = "<group>"; };
+		FD64E03E2C2EB2ED006B2DEF /* SearchBarCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarCustomView.swift; sourceTree = "<group>"; };
+		FD64E0402C2EB308006B2DEF /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; };
+		FD64E0422C2EB331006B2DEF /* UserReports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReports.swift; sourceTree = "<group>"; };
+		FD64E0442C2EB34F006B2DEF /* MealAddReadyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAddReadyDetailView.swift; sourceTree = "<group>"; };
+		FD64E0462C2EB37B006B2DEF /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
+		FD64E0482C2EB3A4006B2DEF /* MealAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAddView.swift; sourceTree = "<group>"; };
+		FD64E04A2C2EB3C7006B2DEF /* BolusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BolusView.swift; sourceTree = "<group>"; };
+		FD64E04C2C2EB3E4006B2DEF /* SuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionView.swift; sourceTree = "<group>"; };
+		FD64E04E2C2EB402006B2DEF /* MealAddDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAddDetailView.swift; sourceTree = "<group>"; };
+		FD64E0502C2EB429006B2DEF /* VerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewModel.swift; sourceTree = "<group>"; };
+		FD64E0522C2EB449006B2DEF /* CreateUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewModel.swift; sourceTree = "<group>"; };
+		FD64E0542C2EB467006B2DEF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FD64E0562C2EB481006B2DEF /* BarcodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewModel.swift; sourceTree = "<group>"; };
+		FD64E0582C2EB4A1006B2DEF /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		FD64E05A2C2EB4BC006B2DEF /* FavoriteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewModel.swift; sourceTree = "<group>"; };
+		FD64E05C2C2EB4D4006B2DEF /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
+		FD64E05E2C2EB4EB006B2DEF /* ReceiptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewModel.swift; sourceTree = "<group>"; };
+		FD64E0602C2EB503006B2DEF /* PopularReceiptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularReceiptViewModel.swift; sourceTree = "<group>"; };
+		FD64E0622C2EB51D006B2DEF /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		FD64E0642C2EB53A006B2DEF /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		FD64E0662C2EB559006B2DEF /* ReplyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewModel.swift; sourceTree = "<group>"; };
+		FD64E0682C2EB57C006B2DEF /* UserReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReportViewModel.swift; sourceTree = "<group>"; };
+		FD64E06A2C2EB59A006B2DEF /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
+		FD64E06C2C2EB5B5006B2DEF /* SuggestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewModel.swift; sourceTree = "<group>"; };
+		FDE193662C42A54400AEEA40 /* ReceiptsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsDetailView.swift; sourceTree = "<group>"; };
+		FDE193682C42A5CC00AEEA40 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		FDE1936C2C42F2F500AEEA40 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		FDE193722C432AF500AEEA40 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD090A1D2C3D8E220050FFF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD64DFEB2C2EA8AC006B2DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD090A292C3D91000050FFF0 /* XCTest.framework in Frameworks */,
+				FD64E07F2C2EB86E006B2DEF /* SDWebImage in Frameworks */,
+				FD64E0822C2EB8A6006B2DEF /* SegmentedPicker in Frameworks */,
+				FD64E07C2C2EB856006B2DEF /* SDWebImageSwiftUI in Frameworks */,
+				FD64E0792C2EB83C006B2DEF /* PopupView in Frameworks */,
+				FD64E0702C2EB7FA006B2DEF /* CarBode in Frameworks */,
+				FD64E0732C2EB818006B2DEF /* Alamofire in Frameworks */,
+				FD64E0762C2EB82B006B2DEF /* CustomizableSegmentedControl in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD090A122C3D64C40050FFF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD090A132C3D64C40050FFF0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD090A212C3D8E220050FFF0 /* ColyakAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD090A372C3EE8C50050FFF0 /* Protocols */,
+				FD090A222C3D8E220050FFF0 /* ColyakAppTests.swift */,
+				FD090A2E2C3DABA60050FFF0 /* BarcodeViewModelTest.swift */,
+				FD090A322C3DC2900050FFF0 /* BarcodeDetailViewModelTest.swift */,
+			);
+			path = ColyakAppTests;
+			sourceTree = "<group>";
+		};
+		FD090A362C3EE83A0050FFF0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FD090A382C3EE9090050FFF0 /* NetworkHelper.swift */,
+				FD090A562C3F39650050FFF0 /* InternetStatusControllerView.swift */,
+				FD090A582C3F3B800050FFF0 /* ViewExtension.swift */,
+				FDE1936C2C42F2F500AEEA40 /* DateFormatter.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FD090A372C3EE8C50050FFF0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FD090A302C3DAE700050FFF0 /* MockUrlProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FD64DFE52C2EA8AC006B2DEF = {
+			isa = PBXGroup;
+			children = (
+				FD64DFF02C2EA8AC006B2DEF /* ColyakApp */,
+				FD090A212C3D8E220050FFF0 /* ColyakAppTests */,
+				FD64DFEF2C2EA8AC006B2DEF /* Products */,
+				FD090A122C3D64C40050FFF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		FD64DFEF2C2EA8AC006B2DEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD64DFEE2C2EA8AC006B2DEF /* ColyakApp.app */,
+				FD090A202C3D8E220050FFF0 /* ColyakAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD64DFF02C2EA8AC006B2DEF /* ColyakApp */ = {
+			isa = PBXGroup;
+			children = (
+				FDE193722C432AF500AEEA40 /* Launch Screen.storyboard */,
+				FD64DFF12C2EA8AC006B2DEF /* ColyakAppApp.swift */,
+				FD49111E2C2EC2CA00BFC070 /* Info.plist */,
+				FD64E0032C2EAE06006B2DEF /* Model */,
+				FD64E0022C2EADF5006B2DEF /* ViewModel */,
+				FD64E0012C2EADE4006B2DEF /* View */,
+				FD090A362C3EE83A0050FFF0 /* Helper */,
+				FD64DFF52C2EA8AF006B2DEF /* Assets.xcassets */,
+				FD64DFF72C2EA8AF006B2DEF /* Preview Content */,
+			);
+			path = ColyakApp;
+			sourceTree = "<group>";
+		};
+		FD64DFF72C2EA8AF006B2DEF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD64DFF82C2EA8AF006B2DEF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD64E0012C2EADE4006B2DEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDE193682C42A5CC00AEEA40 /* CommentView.swift */,
+				FD64E02A2C2EB10D006B2DEF /* ReplyAllView.swift */,
+				FD64DFF32C2EA8AC006B2DEF /* ContentView.swift */,
+				FD64E0042C2EAE83006B2DEF /* RegisterView.swift */,
+				FD64E0062C2EAEBE006B2DEF /* MembershipOTP.swift */,
+				FD64E0082C2EAEE3006B2DEF /* VerifyCodeView.swift */,
+				FD64E00A2C2EAF22006B2DEF /* LoginView.swift */,
+				FD64E00C2C2EAF3F006B2DEF /* MainView.swift */,
+				FD64E00E2C2EAF6A006B2DEF /* HomeView.swift */,
+				FD64E0102C2EAF8F006B2DEF /* BarcodeDetailView.swift */,
+				FD64E0122C2EAFA9006B2DEF /* ModelScannerView.swift */,
+				FD64E0142C2EAFC7006B2DEF /* ChangePasswordView.swift */,
+				FD64E0162C2EAFDD006B2DEF /* NewPasswordView.swift */,
+				FD64E0182C2EAFF9006B2DEF /* ChangePasswordOTP.swift */,
+				FD64E01A2C2EB016006B2DEF /* PopupView.swift */,
+				FD64E01C2C2EB031006B2DEF /* PopupViewBackground.swift */,
+				FD64E01E2C2EB049006B2DEF /* PDFView.swift */,
+				FD64E0202C2EB062006B2DEF /* PDFViews.swift */,
+				FD64E0222C2EB07C006B2DEF /* ReceiptsView.swift */,
+				FDE193662C42A54400AEEA40 /* ReceiptsDetailView.swift */,
+				FD64E0242C2EB0B5006B2DEF /* TopReceiptDetailView.swift */,
+				FD64E0262C2EB0CD006B2DEF /* QuizView.swift */,
+				FD64E0282C2EB0E7006B2DEF /* QuestionView.swift */,
+				FD64E02C2C2EB129006B2DEF /* TopBar.swift */,
+				FD64E02E2C2EB14D006B2DEF /* MenuButtons.swift */,
+				FD64E0302C2EB16F006B2DEF /* SlideMenu.swift */,
+				FD64E0322C2EB1FA006B2DEF /* ProfileView.swift */,
+				FD64E0342C2EB234006B2DEF /* MealSelectionDesignView.swift */,
+				FD64E0362C2EB25B006B2DEF /* MealCircleProgressView.swift */,
+				FD64E0382C2EB277006B2DEF /* NutrificationView.swift */,
+				FD64E03A2C2EB299006B2DEF /* CircleProgressBar.swift */,
+				FD64E03C2C2EB2BE006B2DEF /* NutritionProgressView.swift */,
+				FD64E03E2C2EB2ED006B2DEF /* SearchBarCustomView.swift */,
+				FD64E0402C2EB308006B2DEF /* MealView.swift */,
+				FD64E0422C2EB331006B2DEF /* UserReports.swift */,
+				FD64E0442C2EB34F006B2DEF /* MealAddReadyDetailView.swift */,
+				FD64E0462C2EB37B006B2DEF /* MealListView.swift */,
+				FD64E0482C2EB3A4006B2DEF /* MealAddView.swift */,
+				FD64E04A2C2EB3C7006B2DEF /* BolusView.swift */,
+				FD64E04C2C2EB3E4006B2DEF /* SuggestionView.swift */,
+				FD64E04E2C2EB402006B2DEF /* MealAddDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD64E0022C2EADF5006B2DEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD64E0502C2EB429006B2DEF /* VerificationViewModel.swift */,
+				FD64E0522C2EB449006B2DEF /* CreateUserViewModel.swift */,
+				FD64E0542C2EB467006B2DEF /* LoginViewModel.swift */,
+				FD64E0562C2EB481006B2DEF /* BarcodeViewModel.swift */,
+				FD64E0582C2EB4A1006B2DEF /* ChangePasswordViewModel.swift */,
+				FD64E05A2C2EB4BC006B2DEF /* FavoriteListViewModel.swift */,
+				FD64E05C2C2EB4D4006B2DEF /* PDFViewModel.swift */,
+				FD64E05E2C2EB4EB006B2DEF /* ReceiptViewModel.swift */,
+				FD64E0602C2EB503006B2DEF /* PopularReceiptViewModel.swift */,
+				FD64E0622C2EB51D006B2DEF /* QuizViewModel.swift */,
+				FD64E0642C2EB53A006B2DEF /* CommentViewModel.swift */,
+				FD64E0662C2EB559006B2DEF /* ReplyViewModel.swift */,
+				FD64E0682C2EB57C006B2DEF /* UserReportViewModel.swift */,
+				FD64E06A2C2EB59A006B2DEF /* MealViewModel.swift */,
+				FD64E06C2C2EB5B5006B2DEF /* SuggestionViewModel.swift */,
+				FD090A342C3DC36C0050FFF0 /* BarcodeDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD64E0032C2EAE06006B2DEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD4911222C2EC3E200BFC070 /* LoginModel.swift */,
+				FD4911262C2EC41C00BFC070 /* BarcodeModel.swift */,
+				FD4911282C2EC43A00BFC070 /* VerifyModel.swift */,
+				FD49112A2C2EC46700BFC070 /* LikeResponseModel.swift */,
+				FD49112C2C2EC48300BFC070 /* PDFModel.swift */,
+				FD49112E2C2EC4BB00BFC070 /* ReceiptModel.swift */,
+				FD4911302C2EC4D400BFC070 /* QuizModel.swift */,
+				FD4911322C2EC4E400BFC070 /* CommentModel.swift */,
+				FD4911342C2EC4F500BFC070 /* ReplyModel.swift */,
+				FD4911362C2EC52300BFC070 /* UserReportModel.swift */,
+				FD4911382C2EC53B00BFC070 /* BolusModel.swift */,
+				FD49113A2C2EC55600BFC070 /* SuggestionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD090A1F2C3D8E220050FFF0 /* ColyakAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD090A262C3D8E220050FFF0 /* Build configuration list for PBXNativeTarget "ColyakAppTests" */;
+			buildPhases = (
+				FD090A1C2C3D8E220050FFF0 /* Sources */,
+				FD090A1D2C3D8E220050FFF0 /* Frameworks */,
+				FD090A1E2C3D8E220050FFF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD090A252C3D8E220050FFF0 /* PBXTargetDependency */,
+			);
+			name = ColyakAppTests;
+			productName = ColyakAppTests;
+			productReference = FD090A202C3D8E220050FFF0 /* ColyakAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD64DFED2C2EA8AC006B2DEF /* ColyakApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD64DFFC2C2EA8AF006B2DEF /* Build configuration list for PBXNativeTarget "ColyakApp" */;
+			buildPhases = (
+				FD64DFEA2C2EA8AC006B2DEF /* Sources */,
+				FD64DFEB2C2EA8AC006B2DEF /* Frameworks */,
+				FD64DFEC2C2EA8AC006B2DEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColyakApp;
+			packageProductDependencies = (
+				FD64E06F2C2EB7FA006B2DEF /* CarBode */,
+				FD64E0722C2EB818006B2DEF /* Alamofire */,
+				FD64E0752C2EB82B006B2DEF /* CustomizableSegmentedControl */,
+				FD64E0782C2EB83C006B2DEF /* PopupView */,
+				FD64E07B2C2EB856006B2DEF /* SDWebImageSwiftUI */,
+				FD64E07E2C2EB86E006B2DEF /* SDWebImage */,
+				FD64E0812C2EB8A6006B2DEF /* SegmentedPicker */,
+			);
+			productName = ColyakApp;
+			productReference = FD64DFEE2C2EA8AC006B2DEF /* ColyakApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD64DFE62C2EA8AC006B2DEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FD090A1F2C3D8E220050FFF0 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FD64DFED2C2EA8AC006B2DEF;
+					};
+					FD64DFED2C2EA8AC006B2DEF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = FD64DFE92C2EA8AC006B2DEF /* Build configuration list for PBXProject "ColyakApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD64DFE52C2EA8AC006B2DEF;
+			packageReferences = (
+				FD64E06E2C2EB7FA006B2DEF /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
+				FD64E0712C2EB818006B2DEF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FD64E0742C2EB82B006B2DEF /* XCRemoteSwiftPackageReference "CustomizableSegmentedControl" */,
+				FD64E0772C2EB83C006B2DEF /* XCRemoteSwiftPackageReference "PopupView" */,
+				FD64E07A2C2EB856006B2DEF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				FD64E07D2C2EB86E006B2DEF /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				FD64E0802C2EB8A6006B2DEF /* XCRemoteSwiftPackageReference "SwiftySegmentedPicker" */,
+			);
+			productRefGroup = FD64DFEF2C2EA8AC006B2DEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD64DFED2C2EA8AC006B2DEF /* ColyakApp */,
+				FD090A1F2C3D8E220050FFF0 /* ColyakAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD090A1E2C3D8E220050FFF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD64DFEC2C2EA8AC006B2DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE193732C432AF500AEEA40 /* Launch Screen.storyboard in Resources */,
+				FD64DFF92C2EA8AF006B2DEF /* Preview Assets.xcassets in Resources */,
+				FD64DFF62C2EA8AF006B2DEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD090A1C2C3D8E220050FFF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD090A332C3DC2900050FFF0 /* BarcodeDetailViewModelTest.swift in Sources */,
+				FD090A312C3DAE700050FFF0 /* MockUrlProtocol.swift in Sources */,
+				FD090A232C3D8E220050FFF0 /* ColyakAppTests.swift in Sources */,
+				FD090A2F2C3DABA60050FFF0 /* BarcodeViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD64DFEA2C2EA8AC006B2DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD64E0372C2EB25B006B2DEF /* MealCircleProgressView.swift in Sources */,
+				FD64E03D2C2EB2BE006B2DEF /* NutritionProgressView.swift in Sources */,
+				FD64E02F2C2EB14D006B2DEF /* MenuButtons.swift in Sources */,
+				FDE193692C42A5CC00AEEA40 /* CommentView.swift in Sources */,
+				FD49113B2C2EC55600BFC070 /* SuggestionModel.swift in Sources */,
+				FD64E0632C2EB51D006B2DEF /* QuizViewModel.swift in Sources */,
+				FD4911312C2EC4D400BFC070 /* QuizModel.swift in Sources */,
+				FD64E0172C2EAFDD006B2DEF /* NewPasswordView.swift in Sources */,
+				FD49112B2C2EC46700BFC070 /* LikeResponseModel.swift in Sources */,
+				FD64E00B2C2EAF22006B2DEF /* LoginView.swift in Sources */,
+				FDE1936D2C42F2F500AEEA40 /* DateFormatter.swift in Sources */,
+				FD090A592C3F3B800050FFF0 /* ViewExtension.swift in Sources */,
+				FD64E0152C2EAFC7006B2DEF /* ChangePasswordView.swift in Sources */,
+				FD64E0132C2EAFA9006B2DEF /* ModelScannerView.swift in Sources */,
+				FD64E0692C2EB57C006B2DEF /* UserReportViewModel.swift in Sources */,
+				FD4911392C2EC53B00BFC070 /* BolusModel.swift in Sources */,
+				FD64E03B2C2EB299006B2DEF /* CircleProgressBar.swift in Sources */,
+				FD64E04F2C2EB402006B2DEF /* MealAddDetailView.swift in Sources */,
+				FD64E0252C2EB0B5006B2DEF /* TopReceiptDetailView.swift in Sources */,
+				FD64E01D2C2EB031006B2DEF /* PopupViewBackground.swift in Sources */,
+				FD64E0532C2EB449006B2DEF /* CreateUserViewModel.swift in Sources */,
+				FD64E04B2C2EB3C7006B2DEF /* BolusView.swift in Sources */,
+				FD64E0572C2EB481006B2DEF /* BarcodeViewModel.swift in Sources */,
+				FD64E00D2C2EAF3F006B2DEF /* MainView.swift in Sources */,
+				FD64E0112C2EAF8F006B2DEF /* BarcodeDetailView.swift in Sources */,
+				FD4911272C2EC41C00BFC070 /* BarcodeModel.swift in Sources */,
+				FDE193672C42A54400AEEA40 /* ReceiptsDetailView.swift in Sources */,
+				FD64E06D2C2EB5B5006B2DEF /* SuggestionViewModel.swift in Sources */,
+				FD64E04D2C2EB3E4006B2DEF /* SuggestionView.swift in Sources */,
+				FD64E0652C2EB53A006B2DEF /* CommentViewModel.swift in Sources */,
+				FD64E0232C2EB07C006B2DEF /* ReceiptsView.swift in Sources */,
+				FD4911332C2EC4E400BFC070 /* CommentModel.swift in Sources */,
+				FD090A392C3EE9090050FFF0 /* NetworkHelper.swift in Sources */,
+				FD49112D2C2EC48300BFC070 /* PDFModel.swift in Sources */,
+				FD64E02B2C2EB10D006B2DEF /* ReplyAllView.swift in Sources */,
+				FD64E0052C2EAE83006B2DEF /* RegisterView.swift in Sources */,
+				FD64E06B2C2EB59A006B2DEF /* MealViewModel.swift in Sources */,
+				FD64E0292C2EB0E7006B2DEF /* QuestionView.swift in Sources */,
+				FD090A572C3F39650050FFF0 /* InternetStatusControllerView.swift in Sources */,
+				FD64E0552C2EB468006B2DEF /* LoginViewModel.swift in Sources */,
+				FD64E0352C2EB234006B2DEF /* MealSelectionDesignView.swift in Sources */,
+				FD64E01B2C2EB016006B2DEF /* PopupView.swift in Sources */,
+				FD4911232C2EC3E200BFC070 /* LoginModel.swift in Sources */,
+				FD64E0332C2EB1FA006B2DEF /* ProfileView.swift in Sources */,
+				FD64E0312C2EB16F006B2DEF /* SlideMenu.swift in Sources */,
+				FD64E05B2C2EB4BC006B2DEF /* FavoriteListViewModel.swift in Sources */,
+				FD64E0092C2EAEE3006B2DEF /* VerifyCodeView.swift in Sources */,
+				FD64E03F2C2EB2ED006B2DEF /* SearchBarCustomView.swift in Sources */,
+				FD4911352C2EC4F600BFC070 /* ReplyModel.swift in Sources */,
+				FD64E05D2C2EB4D4006B2DEF /* PDFViewModel.swift in Sources */,
+				FD64E0492C2EB3A4006B2DEF /* MealAddView.swift in Sources */,
+				FD64E0072C2EAEBE006B2DEF /* MembershipOTP.swift in Sources */,
+				FD64E0452C2EB34F006B2DEF /* MealAddReadyDetailView.swift in Sources */,
+				FD64E0212C2EB062006B2DEF /* PDFViews.swift in Sources */,
+				FD64E0432C2EB331006B2DEF /* UserReports.swift in Sources */,
+				FD64E0392C2EB277006B2DEF /* NutrificationView.swift in Sources */,
+				FD64E0192C2EAFF9006B2DEF /* ChangePasswordOTP.swift in Sources */,
+				FD64E00F2C2EAF6A006B2DEF /* HomeView.swift in Sources */,
+				FD64E02D2C2EB129006B2DEF /* TopBar.swift in Sources */,
+				FD64E01F2C2EB049006B2DEF /* PDFView.swift in Sources */,
+				FD64E0412C2EB308006B2DEF /* MealView.swift in Sources */,
+				FD49112F2C2EC4BB00BFC070 /* ReceiptModel.swift in Sources */,
+				FD64E0672C2EB55A006B2DEF /* ReplyViewModel.swift in Sources */,
+				FD64E05F2C2EB4EB006B2DEF /* ReceiptViewModel.swift in Sources */,
+				FD090A352C3DC36C0050FFF0 /* BarcodeDetailsViewModel.swift in Sources */,
+				FD4911292C2EC43A00BFC070 /* VerifyModel.swift in Sources */,
+				FD64E0512C2EB429006B2DEF /* VerificationViewModel.swift in Sources */,
+				FD64E0592C2EB4A1006B2DEF /* ChangePasswordViewModel.swift in Sources */,
+				FD64E0272C2EB0CD006B2DEF /* QuizView.swift in Sources */,
+				FD64DFF42C2EA8AC006B2DEF /* ContentView.swift in Sources */,
+				FD64E0612C2EB503006B2DEF /* PopularReceiptViewModel.swift in Sources */,
+				FD4911372C2EC52300BFC070 /* UserReportModel.swift in Sources */,
+				FD64DFF22C2EA8AC006B2DEF /* ColyakAppApp.swift in Sources */,
+				FD64E0472C2EB37B006B2DEF /* MealListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD090A252C3D8E220050FFF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD64DFED2C2EA8AC006B2DEF /* ColyakApp */;
+			targetProxy = FD090A242C3D8E220050FFF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD090A272C3D8E220050FFF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYY3HJ4FMW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocyigitalper22.ColyakAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColyakApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColyakApp";
+			};
+			name = Debug;
+		};
+		FD090A282C3D8E220050FFF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYY3HJ4FMW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocyigitalper22.ColyakAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColyakApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColyakApp";
+			};
+			name = Release;
+		};
+		FD64DFFA2C2EA8AF006B2DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD64DFFB2C2EA8AF006B2DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD64DFFD2C2EA8AF006B2DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ColyakApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QYY3HJ4FMW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColyakApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Colyabet;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kameraya erişim izni";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocyigitalper22.ColyakApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD64DFFE2C2EA8AF006B2DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ColyakApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QYY3HJ4FMW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColyakApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Colyabet;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kameraya erişim izni";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocyigitalper22.ColyakApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD090A262C3D8E220050FFF0 /* Build configuration list for PBXNativeTarget "ColyakAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD090A272C3D8E220050FFF0 /* Debug */,
+				FD090A282C3D8E220050FFF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD64DFE92C2EA8AC006B2DEF /* Build configuration list for PBXProject "ColyakApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD64DFFA2C2EA8AF006B2DEF /* Debug */,
+				FD64DFFB2C2EA8AF006B2DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD64DFFC2C2EA8AF006B2DEF /* Build configuration list for PBXNativeTarget "ColyakApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD64DFFD2C2EA8AF006B2DEF /* Debug */,
+				FD64DFFE2C2EA8AF006B2DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD64E06E2C2EB7FA006B2DEF /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+		FD64E0712C2EB818006B2DEF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		FD64E0742C2EB82B006B2DEF /* XCRemoteSwiftPackageReference "CustomizableSegmentedControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Inxel/CustomizableSegmentedControl";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		FD64E0772C2EB83C006B2DEF /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		FD64E07A2C2EB856006B2DEF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+		FD64E07D2C2EB86E006B2DEF /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.3;
+			};
+		};
+		FD64E0802C2EB8A6006B2DEF /* XCRemoteSwiftPackageReference "SwiftySegmentedPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KazaiMazai/SwiftySegmentedPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD64E06F2C2EB7FA006B2DEF /* CarBode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD64E06E2C2EB7FA006B2DEF /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
+			productName = CarBode;
+		};
+		FD64E0722C2EB818006B2DEF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD64E0712C2EB818006B2DEF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FD64E0752C2EB82B006B2DEF /* CustomizableSegmentedControl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD64E0742C2EB82B006B2DEF /* XCRemoteSwiftPackageReference "CustomizableSegmentedControl" */;
+			productName = CustomizableSegmentedControl;
+		};
+		FD64E0782C2EB83C006B2DEF /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD64E0772C2EB83C006B2DEF /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+		FD64E07B2C2EB856006B2DEF /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD64E07A2C2EB856006B2DEF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		FD64E07E2C2EB86E006B2DEF /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD64E07D2C2EB86E006B2DEF /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		FD64E0812C2EB8A6006B2DEF /* SegmentedPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD64E0802C2EB8A6006B2DEF /* XCRemoteSwiftPackageReference "SwiftySegmentedPicker" */;
+			productName = SegmentedPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FD64DFE62C2EA8AC006B2DEF /* Project object */;
+}
